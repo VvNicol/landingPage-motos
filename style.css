@@ -1,0 +1,145 @@
+body {
+    background-color: #07080b !important;
+    /* Cambia el color de fondo del documento */
+    color: #ffbd59;
+    /* Asegúrate de que el texto sea visible sobre el fondo oscuro */
+    margin: 0;
+}
+
+/* Ajustar el fondo de la navbar con transparencia */
+.navbar {
+    background-color: rgba(60, 62, 68, 0.8);
+    /* Color de fondo con 80% de opacidad */
+    transition: background-color 0.3s ease;
+    /* Transición suave */
+}
+
+/* Asegúrate de que la imagen ocupa el ancho completo y se recorta correctamente */
+.img-fluid {
+    width: 100%;
+    height: auto;
+    /* Mantener la proporción */
+}
+
+.short-img {
+    height: 400px;
+    /* Cambia este valor para ajustar la altura de la imagen */
+    object-fit: cover;
+    /* Mantener la relación de aspecto y cubrir el área */
+    margin-top: -30px;
+    /* Ajusta este valor para mover la imagen hacia arriba */
+}
+
+/* Estilo de los enlaces en la barra de navegación */
+.nav-link {
+    color: #ffbd59 !important;
+    /* Asegurarse de que el color sea #ffbd59 */
+}
+
+.nav-link:hover {
+    color: #007bff;
+    /* Color del texto al pasar el ratón */
+    text-decoration: underline;
+    /* Subrayar al hacer hover */
+}
+
+/* Centrar el texto dentro de la navbar */
+.navbar-nav {
+    flex-direction: row;
+    /* Asegurarse de que los elementos estén en fila */
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px;
+    /* Espacio entre los elementos del menú */
+}
+
+/* Estilos para las filas y columnas dentro del carrusel */
+.carousel-inner .row {
+    height: 100%;
+    /* Asegúrate de que la fila ocupe toda la altura */
+}
+
+.carousel-inner .col {
+    padding: 0 10px;
+    /* Espaciado horizontal entre imágenes */
+}
+
+.carousel-inner .col {
+    flex: 0 0 calc(33.333% - 20px);
+    /* Para 3 imágenes y espacio entre ellas */
+    max-width: calc(33.333% - 20px);
+    /* Asegúrate de que el ancho no exceda el 100% */
+}
+
+.carousel-inner img {
+    width: 100%;
+    /* Las imágenes ocuparán el 100% del ancho de la columna */
+    height: auto;
+    /* Mantener la proporción de las imágenes */
+    object-fit: cover;
+    /* Cubrir el área sin distorsionar */
+    max-height: 200px;
+    /* Ajusta esta altura para hacer las imágenes más pequeñas */
+}
+
+.carousel-indicators {
+    position: relative;
+    /* Mantener como relative */
+    bottom: -30px;
+    /* Ajusta según sea necesario */
+    left: 50%;
+    /* Centra horizontalmente */
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    /* Asegúrate de que estén centrados */
+}
+
+.carousel-indicators button {
+    background-color: #882d29;
+    /* Color que deseas para los indicadores */
+    border: none;
+    /* Elimina el borde del botón */
+    width: 12px;
+    /* Ajusta el tamaño del botón */
+    height: 12px;
+    /* Ajusta el tamaño del botón */
+    margin: 0 5px;
+    /* Espacio entre los botones */
+}
+
+.carousel-indicators-container {
+    display: flex;
+    justify-content: center;
+    /* Centra los indicadores horizontalmente */
+    margin-top: 10px;
+    /* Espacio entre las imágenes y los indicadores */
+    height: 40px;
+    /* Altura fija para el contenedor */
+}
+
+.carousel-indicators {
+    display: flex;
+    /* Asegúrate de que se muestren en fila */
+}
+
+.carousel-indicators button {
+    background-color: #882d29;
+    /* Color que deseas para los indicadores */
+    border: none;
+    /* Elimina el borde del botón */
+    width: 12px;
+    /* Ajusta el tamaño del botón */
+    height: 12px;
+    /* Ajusta el tamaño del botón */
+    margin: 0 5px;
+    /* Espacio entre los botones */
+    transition: background-color 0.3s;
+    /* Transición suave al cambiar el color */
+}
+
+.carousel-indicators button.active {
+    background-color: #882d29;
+    /* Cambia el color del botón activo si lo deseas */
+}
