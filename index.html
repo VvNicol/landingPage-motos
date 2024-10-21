@@ -32,7 +32,7 @@
                         <a class="nav-link" href="#">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Registrarse</a>
+                        <a class="nav-link" href="#" onclick="verImagenFondoRegistro()">Registrarse</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Iniciar Sesión</a>
@@ -42,50 +42,47 @@
         </div>
     </nav>
 
-    <!-- Imagen en columna -->
-    <div class="container-fluid p-0"> <!-- Elimina el padding en los contenedores -->
-        <div class="col"> <!-- Ocupa todo el ancho -->
-            <img src="/img/harley-davidson.jpg" alt="Imagen de una moto de harley-davidson en blanco y negro"
-                class="img-fluid short-img">
+    <main id="contenedor">
+        <!-- Fondo -->
+        <div class="container-fluid p-0">
+            <div class="col">
+                <img src="/img/harley-davidson.jpg" alt="Imagen de una moto de harley-davidson en blanco y negro"
+                    class="img-fluid short-img">
+            </div>
         </div>
-    </div>
-    <!-- Carrusel -->
-    <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row d-flex justify-content-center">
-                    <div class="col"><img src="/img/Dm 200.jpg" class="img-fluid" alt="Imagen 1"></div>
-                    <div class="col"><img src="/img/carrera.jpg" class="img-fluid" alt="Imagen 2"></div>
-                    <div class="col"><img src="/img/Motos.jpg" class="img-fluid" alt="Imagen 3"></div>
+
+        <!-- Carrusel -->
+        <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col"><img src="/img/Dm 200.jpg" class="img-fluid" alt="Imagen 1"></div>
+                        <div class="col"><img src="/img/carrera.jpg" class="img-fluid" alt="Imagen 2"></div>
+                        <div class="col"><img src="/img/Motos.jpg" class="img-fluid" alt="Imagen 3"></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col"><img src="/img/biker.jpg" class="img-fluid" alt="Imagen 4"></div>
+                        <div class="col"><img src="/img/motorcycle-.jpg" class="img-fluid" alt="Imagen 5"></div>
+                        <div class="col"><img src="/img/vintague.jpg" class="img-fluid" alt="Imagen 6"></div>
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="row d-flex justify-content-center">
-                    <div class="col"><img src="/img/biker.jpg" class="img-fluid" alt="Imagen 4"></div>
-                    <div class="col"><img src="/img/motorcycle-.jpg" class="img-fluid" alt="Imagen 5"></div>
-                    <div class="col"><img src="/img/vintague.jpg" class="img-fluid" alt="Imagen 6"></div>
+
+            <!-- Contenedor para los indicadores -->
+            <div class="carousel-indicators-container">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
                 </div>
             </div>
         </div>
+    </main>
 
-        <!-- Contenedor para los indicadores -->
-        <div class="carousel-indicators-container">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-            </div>
-        </div>
-    </div>
-
-
-    <div>
-        hola
-    </div>
-
-
-
+    <script type="module" src="main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
