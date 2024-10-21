@@ -1,16 +1,26 @@
-import { fondoRegistro, formularioInicioSesion } from "./registro.js";
+import { fondoIniciarSesion, formularioInicioSesion} from "./iniciarSesion.js";
+import { imgFondoRegistro, formularioRegistro } from "./registro.js";
 
 const mainContenedor = document.querySelector('#contenedor');
 
-function verImagenFondoRegistro() {
+function IniciarSesion() {
     mainContenedor.innerHTML = ''
-    const fondo = fondoRegistro();
+    const fondo = fondoIniciarSesion();
     const formulario = formularioInicioSesion();
 
     mainContenedor.appendChild(fondo);
     mainContenedor.appendChild(formulario)
 }
 
+function Registro(){
+    mainContenedor.innerHTML ='';
+    const imgFondo = imgFondoRegistro();
+    const formulario = formularioRegistro();
 
+    mainContenedor.appendChild(imgFondo);
+    mainContenedor.appendChild(formulario);
 
-window.verImagenFondoRegistro = verImagenFondoRegistro;
+}
+
+window.Registro = Registro;
+window.IniciarSesion = IniciarSesion;

@@ -9,7 +9,6 @@ body {
 .img-fluid {
     width: 100%;
     height: auto;
-    /* Mantener la proporción */
 }
 
 .short-img {
@@ -18,20 +17,15 @@ body {
     margin-top: -60px;
 }
 
-/*Fin de img principal*/
-
-/*Fondos de los links*/
 #fondo {
     position: absolute;
     top: 0px;
     left: 0;
     width: 100%;
-    height: 100vh;
     object-fit: cover;
     z-index: -1;
     opacity: 0;
     transition: opacity 0.5s ease-in;
-
 
 }
 
@@ -39,27 +33,19 @@ body {
     opacity: 0.5 !important;
 }
 
-/*Fin de los fondos de links*/
-
-/*Estilos de navegador*/
-/* Estilo de los enlaces en la barra de navegación */
+/*NAVEGADOR*/
 .navbar {
     background-color: rgba(60, 62, 68, 0.8);
-    /* Color de fondo con 80% de opacidad */
     transition: background-color 0.3s ease;
-    /* Transición suave */
 }
 
 .nav-link {
     color: #ffbd59 !important;
-    /* Asegurarse de que el color sea #ffbd59 */
 }
 
 .nav-link:hover {
     color: #007bff;
-    /* Color del texto al pasar el ratón */
     text-decoration: underline;
-    /* Subrayar al hacer hover */
 }
 
 .navbar-nav {
@@ -68,91 +54,74 @@ body {
 
 .navbar-nav .nav-item {
     margin: 0 15px;
-    /* Espacio entre los elementos del menú */
 }
 
-
+/*CARRUSEL*/
 .carousel-inner .row {
     height: 100%;
 }
 
 .carousel-inner .col {
     padding: 0 10px;
-    /* Espaciado horizontal entre imágenes */
 }
 
 .carousel-inner .col {
-    flex: 0 0 calc(33.333% - 10px);
-    /* Para 3 imágenes y espacio entre ellas */
+    flex: 0 0 calc(33.333% - 100px);
     max-width: calc(33.333% - 10px);
-    /* Asegúrate de que el ancho no exceda el 100% */
 }
 
 .carousel-inner img {
     width: 100%;
-    /* Las imágenes ocuparán el 100% del ancho de la columna */
     height: auto;
-    /* Mantener la proporción de las imágenes */
     object-fit: cover;
-    /* Cubrir el área sin distorsionar */
     max-height: 200px;
-    /* Ajusta esta altura para hacer las imágenes más pequeñas */
 }
 
 .carousel-indicators {
     position: relative;
     bottom: -30px;
     left: 50%;
-    /* Centra horizontalmente */
     z-index: 10;
     display: flex;
     justify-content: center;
-    /* Asegúrate de que estén centrados */
 }
 
 .carousel-indicators button {
     background-color: #882d29;
     border: none;
-    /* Elimina el borde del botón */
     width: 12px;
-    /* Ajusta el tamaño del botón */
     height: 12px;
-    /* Ajusta el tamaño del botón */
     margin: 0 5px;
-    /* Espacio entre los botones */
 }
 
 .carousel-indicators-container {
     display: flex;
     justify-content: center;
-    /* Centra los indicadores horizontalmente */
     margin-top: 10px;
-    /* Espacio entre las imágenes y los indicadores */
     height: 40px;
-    /* Altura fija para el contenedor */
 }
 
 .carousel-indicators {
     display: flex;
-    /* Asegúrate de que se muestren en fila */
 }
 
 .carousel-indicators button {
     background-color: #882d29;
-    /* Color que deseas para los indicadores */
     border: none;
-    /* Elimina el borde del botón */
     width: 12px;
-    /* Ajusta el tamaño del botón */
     height: 12px;
-    /* Ajusta el tamaño del botón */
     margin: 0 5px;
-    /* Espacio entre los botones */
     transition: background-color 0.3s;
-    /* Transición suave al cambiar el color */
 }
 
 .carousel-indicators button.active {
-    background-color: #882d29;
-    /* Cambia el color del botón activo si lo deseas */
+    background-color: #bd2921;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
